@@ -20,14 +20,15 @@ import java.lang.reflect.Method;
 
 /**
  *
- * todo 既然都是基于反射，那为何不试试把范型T直接改成RootTest，创建父类，反射子类对象，听着也没毛病对吧～
+ * 说实话，我觉得这不太标准呐～
+ *
  * @author Niyredra Astroline_kamu@outlook.com
  */
-public class DefaultHandler<T extends RootTest> {
+public class DefaultHandler {
 
-    private Class<T> clazz;
+    private Class<RootTest> clazz;
 
-    public DefaultHandler(Class<T> clazz) {
+    public DefaultHandler(Class clazz) {
         this.clazz = clazz;
     }
 
@@ -36,7 +37,7 @@ public class DefaultHandler<T extends RootTest> {
         Method[] declaredMethods = clazz.getDeclaredMethods();
 
         try {
-            T subject = clazz.getDeclaredConstructor().newInstance();
+            RootTest subject = clazz.getDeclaredConstructor().newInstance();
             for (int i = 0; i < declaredMethods.length; i++) {
                 Method method = declaredMethods[i];
                 if (method.isAnnotationPresent(Test.class)) {

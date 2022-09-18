@@ -24,7 +24,7 @@ public class SimpleFactoryApplication {
 
     public static void main(String[] args) {
 
-        new DefaultHandler<SimpleFactoryTest>(SimpleFactoryTest.class).runTests();
+        new DefaultHandler(SimpleFactoryTest.class).runTests();
 
     }
 }
