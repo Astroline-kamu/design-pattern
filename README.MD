@@ -1,8 +1,8 @@
 # 结构
 
 - 创建型模式 (Niyredra)
-    1. 工厂模式
-       1. 简单工厂模式
+    1. 工厂模式 
+       1. [简单工厂模式](./demo/niyredra/factory/simple/Application.java)
        2. 工厂方法模式
        3. 抽象工厂模式
     2. 单例模式
