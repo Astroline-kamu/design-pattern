@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/demo" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/example" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="xml.apis" level="project" />
+    <orderEntry type="library" name="eclipse.birt.runtime.3_7_1.apache.xerces" level="project" />
+  </component>
+</module>
