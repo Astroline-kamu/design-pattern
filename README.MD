@@ -2,7 +2,7 @@
 
 - 创建型模式 (Niyredra)
     1. 工厂模式 
-       1. [简单工厂模式](./demo/niyredra/factory/simple/Application.java)
+       1. [简单工厂模式](./demo/niyredra/factory/simple/SimpleFactoryApplication.java)
        2. 工厂方法模式
        3. 抽象工厂模式
     2. 单例模式
@@ -29,8 +29,18 @@
     10. 模版方法模式
     11. 访问者模式
 
+# 使用
+
+# 测试 
+
+关于使用，每一个目录下都会有一个Test类，在IDE中直接执行具体方法即可（或者命令行？），至于为什么没有将Test分出来，是因为这是一个临时的项目，方便运行展示，所以将Test放在了每一个Test用例里。
+
+
+
+## 后续
+protobuf是个好东西，在最终的example中我会用到它的
+
+
 
 内容参考：https://blog.csdn.net/LoveLion/article/details/17517213
-
-
 

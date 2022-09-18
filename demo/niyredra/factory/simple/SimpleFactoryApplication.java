@@ -6,8 +6,7 @@ package niyredra.factory.simple;
  *
  * @author Niyredra Astroline_kamu@outlook.com
  */
-public class Application {
-
+public class SimpleFactoryApplication {
 
     public static void main(String[] args) {
 
