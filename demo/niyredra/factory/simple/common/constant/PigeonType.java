@@ -22,7 +22,6 @@ import niyredra.factory.simple.prototype.Pigeon;
  */
 public enum PigeonType {
 
-
     GOD("God Pigeon", GodPigeon.class),
     NORMAL("Normal Pigeon", NormalPigeon.class),
     VARIATION("Variation Pigeon", VariationPigeon.class);

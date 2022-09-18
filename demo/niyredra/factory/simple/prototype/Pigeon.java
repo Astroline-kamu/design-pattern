@@ -17,7 +17,15 @@ package niyredra.factory.simple.prototype;
  */
 public abstract class Pigeon{
 
-    private String name = "鸽子";
+    protected String name = "鸽子";
+
+    public Pigeon(String name) {
+        this.name = name;
+    }
+
+    public void beingCatched() {
+        System.out.println("捕获" + name + "！");
+    }
 
     public void fly() {
         System.out.println(name + "飞起来了！");

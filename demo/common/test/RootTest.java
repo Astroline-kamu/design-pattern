@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2022 Astroline All rights reserved.
  *
- * @date: 9/18/22, 4:04 PM
+ * @date: 9/18/22, 9:15 PM
  * @author: Astroline <Astroline_kamu@outlook.com>
  *
  * https://niyredra.com
@@ -10,15 +10,18 @@
  * 嗷～
  */
 
-package niyredra.factory.simple.test;
-
-import common.test.annotation.RunWith;
+package common.test;
 
 /**
- *
- *
  * @author Niyredra Astroline_kamu@outlook.com
  */
-@RunWith
-public class SimpleTest {
+public class RootTest {
+
+    public RootTest(){
+        printInfo();
+    }
+
+    public void printInfo() {
+        System.out.println("::: =========== " + this.getClass().getName() + " =========== :::");
+    }
 }

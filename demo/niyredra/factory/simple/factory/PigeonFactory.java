@@ -22,10 +22,14 @@ import java.lang.reflect.InvocationTargetException;
  */
 public class PigeonFactory {
 
-    public Pigeon getPigeon(PigeonType pigeonType){
+    public static Pigeon getPigeon(PigeonType pigeonType) {
         try {
             return pigeonType.getClazz().getDeclaredConstructor().newInstance();
-        } catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
+        } catch (InstantiationException
+                 | IllegalAccessException
+                 | InvocationTargetException
+                 | NoSuchMethodException
+                e) {
             throw new RuntimeException("Can not build a pigeon exception.\n" + "Pigeon type is: " + pigeonType.getType());
         }
     }

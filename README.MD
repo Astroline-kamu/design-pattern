@@ -1,20 +1,20 @@
 # 结构
 
 - 创建型模式 (Niyredra)
-    1. 工厂模式 
-       1. [简单工厂模式](./demo/niyredra/factory/simple/SimpleFactoryApplication.java)
-       2. 工厂方法模式
-       3. 抽象工厂模式
-    2. 单例模式
-    3. 原型模式
-    4. 建造者模式
+  1. 工厂模式
+    1. [简单工厂模式](./demo/niyredra/factory/simple/SimpleFactoryApplication.java)
+    2. 工厂方法模式
+    3. 抽象工厂模式
+  2. 单例模式
+  3. 原型模式
+  4. 建造者模式
 - 结构型模式 (Calarasas)
-    1. 适配器模式
-    2. 桥接模式
-    3. 组合模式
-    4. 装饰模式
-    5. 代理模式
-    6. 外观模式
+  1. 适配器模式
+  2. 桥接模式
+  3. 组合模式
+  4. 装饰模式
+  5. 代理模式
+  6. 外观模式
     7. 亨元模式
 - 行为型模式 (phiplouwxz)
     1. 职责链模式
@@ -31,16 +31,21 @@
 
 # 使用
 
-# 测试 
+如何运行：
 
-关于使用，每一个目录下都会有一个Test类，在IDE（或者命令行？）中直接执行具体方法即可，至于为什么没有将Test分出来，是因为这是一个临时的项目，方便运行展示，所以将Test放在了每一个Test用例里。
+每一个目录下都会有一个Application类，直接编译执行即可。
 
+# 测试
 
+测试部分其实设计不是很好，原预期准备写类似Junit那种直接调用的，但是我印象里那个直接执行还是靠IDE的插件，所以丢到后期了；
+
+测试类有一个专门的方法，TestApplication，执行则将所有的demo结果都运行出来awa
+
+抽象出父级貌似就是只能干这事...(理论上用注解也可以把Class标注进去，就不用写extends了...)
 
 ## 后续
+
 protobuf是个好东西，在最终的example中我会用到它的
-
-
 
 内容参考：https://blog.csdn.net/LoveLion/article/details/17517213
 

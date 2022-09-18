@@ -12,8 +12,10 @@
 
 package niyredra.factory.simple;
 
+import common.test.handler.DefaultHandler;
+import niyredra.factory.simple.test.SimpleFactoryTest;
+
 /**
- *
  * 简单工厂模式
  *
  * @author Niyredra Astroline_kamu@outlook.com
@@ -21,6 +23,8 @@ package niyredra.factory.simple;
 public class SimpleFactoryApplication {
 
     public static void main(String[] args) {
+
+        new DefaultHandler<SimpleFactoryTest>(SimpleFactoryTest.class).runTests();
 
     }
 }

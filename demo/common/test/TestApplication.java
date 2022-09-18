@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2022 Astroline All rights reserved.
  *
- * @date: 9/18/22, 4:04 PM
+ * @date: 9/18/22, 4:23 PM
  * @author: Astroline <Astroline_kamu@outlook.com>
  *
  * https://niyredra.com
@@ -10,14 +10,13 @@
  * 嗷～
  */
 
-package common.test.annotation;
+package common.test;
 
 /**
- *
  * @author Niyredra Astroline_kamu@outlook.com
  */
-public @interface RunWith {
+public class TestApplication {
+    public static void main(String[] args) {
 
-
-
+    }
 }

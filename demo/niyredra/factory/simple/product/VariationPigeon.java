@@ -19,7 +19,9 @@ import niyredra.factory.simple.prototype.Pigeon;
  */
 public class VariationPigeon extends Pigeon {
 
-    private String name = "异鸽鸽子";
+    public VariationPigeon() {
+        super("异鸽鸽子");
+    }
 
     @Override
     public void flyMethod() {

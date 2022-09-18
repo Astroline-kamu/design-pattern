@@ -19,7 +19,9 @@ import niyredra.factory.simple.prototype.Pigeon;
  */
 public class GodPigeon extends Pigeon {
 
-    private String name = "飞天神鸽";
+    public GodPigeon() {
+        super("飞天神鸽");
+    }
 
     @Override
     public void flyMethod() {
