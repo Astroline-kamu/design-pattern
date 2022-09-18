@@ -23,8 +23,7 @@ import niyredra.factory.simple.test.SimpleFactoryTest;
 public class SimpleFactoryApplication {
 
     public static void main(String[] args) {
-
-        new DefaultHandler(SimpleFactoryTest.class).runTests();
-
+        new DefaultHandler(SimpleFactoryTest.class)
+                .runTests();
     }
 }
