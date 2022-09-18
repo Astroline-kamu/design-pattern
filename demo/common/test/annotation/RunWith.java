@@ -10,17 +10,14 @@
  * 嗷～
  */
 
-package niyredra.factory.simple;
+package common.test.annotation;
 
 /**
  *
- * 简单工厂模式
- *
  * @author Niyredra Astroline_kamu@outlook.com
  */
-public class SimpleFactoryApplication {
+public @interface RunWith {
 
-    public static void main(String[] args) {
 
-    }
+
 }

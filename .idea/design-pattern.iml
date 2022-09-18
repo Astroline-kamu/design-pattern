@@ -9,7 +9,5 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="xml.apis" level="project" />
-    <orderEntry type="library" name="eclipse.birt.runtime.3_7_1.apache.xerces" level="project" />
   </component>
 </module>
