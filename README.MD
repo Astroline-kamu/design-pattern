@@ -2,9 +2,9 @@
 
 - 创建型模式 (Niyredra)
     1. 工厂模式
-       1. [简单工厂模式](./demo/niyredra/factory/simple/SimpleFactoryApplication.java)
-       2. 工厂方法模式
-       3. 抽象工厂模式
+        1. [简单工厂模式](./demo/niyredra/factory/simple/SimpleFactoryApplication.java)
+        2. 工厂方法模式
+        3. 抽象工厂模式
     2. 单例模式
     3. 原型模式
     4. 建造者模式
