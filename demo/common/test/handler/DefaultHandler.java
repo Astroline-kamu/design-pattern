@@ -41,6 +41,9 @@ public class DefaultHandler {
             for (int i = 0; i < declaredMethods.length; i++) {
                 Method method = declaredMethods[i];
                 if (method.isAnnotationPresent(Test.class)) {
+                    // todo 抽象出打印方法，将所有内容使用通用方式打印，可以设计UI将内容按行写入框内 目前暂时这么用着
+                    System.out.println();
+                    System.out.println("::: =========== " + method.getName() + " =========== :::");
                     method.setAccessible(true);
                     method.invoke(subject);
                 }
