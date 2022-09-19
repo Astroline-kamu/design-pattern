@@ -12,10 +12,21 @@
 
 package niyredra.factory.normal.product.base;
 
+import niyredra.factory.normal.product.model.UnitProperty;
+
 /**
  * @author Niyredra Astroline_kamu@outlook.com
  */
 public class Unit {
+
+    private String name;
+
+
+
+    // mark 属性是可以用静态文本反射上去的
+    private UnitProperty property;
+
+
 
 
 }

@@ -52,5 +52,11 @@ protobuf是个好东西，在最终的example中我会用到它的
 > 所以，不管日志的实现也好，还是说去描述刺蛇和变异结果的关系，它们都可以是业务或者是描述。造成这种感知差距的原因在于后续，刺蛇没有后续，日志可以记录，大概就这么些。
 
 
+# 关于使用的包
+
+IDEA - `command + ;` ->> Libraries ->> form maven (理论上我的jar包是也上传到项目中的，所以代码下下来之后直接引用本地文件就好 文件地址在根目录的lib下 或者你也是idea，就不用改啦～)
+
+Lombok ---- 我真的不想再写getter and setter了啊～～
+
 内容参考：https://blog.csdn.net/LoveLion/article/details/17517213
 
