@@ -10,11 +10,11 @@
  * 嗷～
  */
 
-package niyredra.factory.normal.product.base;
+package niyredra.factory.abstr.product.base;
 
 import lombok.Data;
-import niyredra.factory.normal.product.model.UnitAttackProperty;
-import niyredra.factory.normal.product.model.UnitSkill;
+import niyredra.factory.abstr.product.model.UnitAttackProperty;
+import niyredra.factory.abstr.product.model.UnitSkill;
 
 /**
  *

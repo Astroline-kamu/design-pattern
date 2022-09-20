@@ -10,9 +10,10 @@
  * 嗷～
  */
 
-package niyredra.factory.normal.product.model;
+package niyredra.factory.abstr.product.model;
 
 import lombok.Data;
+import lombok.Getter;
 
 import java.math.BigDecimal;
 
