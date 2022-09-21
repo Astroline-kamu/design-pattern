@@ -21,16 +21,13 @@ import lombok.Getter;
  */
 @Getter
 public enum UnitTag {
-
-    // 名字是暂时标记使用 最后会同步入代码
-    WALK(1),
-    FLY(1 << 1),
-    HERO(1 << 2),
-    HEAVY(1 << 3),
-    LIGHT(1 << 4),
-    DETECT(1 << 5),
-    BUILDING(1 << 6),
-    PSIONICS(1 << 7),
+    Aromored(1),  // 重甲
+    LIGHT(1 << 2),
+    Heroic(1 << 3),
+    Massive(1 << 4),  // 重型单位
+    Psionic(1 << 5),
+    Summoned(1 << 6),
+    Structure(1 << 7),
     MACHANICAL(1 << 8),
     BIOLOGICAL(1 << 9)
     ;

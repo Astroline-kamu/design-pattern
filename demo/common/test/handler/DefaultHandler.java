@@ -22,6 +22,8 @@ import java.lang.reflect.Method;
  *
  * 说实话，我觉得这不太标准呐～
  *
+ * 正常Handler是用建造者模式装载的awa
+ *
  * @author Niyredra Astroline_kamu@outlook.com
  */
 public class DefaultHandler {

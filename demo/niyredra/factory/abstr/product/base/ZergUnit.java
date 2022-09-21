@@ -10,11 +10,11 @@
  * 嗷～
  */
 
-package niyredra.factory.normal.product.base;
+package niyredra.factory.abstr.product.base;
 
 import lombok.Data;
-import niyredra.factory.normal.product.model.UnitAttackProperty;
-import niyredra.factory.normal.product.model.UnitSkill;
+
+import java.math.BigDecimal;
 
 /**
  *
@@ -23,7 +23,7 @@ import niyredra.factory.normal.product.model.UnitSkill;
  * @author Niyredra Astroline_kamu@outlook.com
  */
 @Data
-public class Unit {
+public class ZergUnit {
 
     private int tag;
 
@@ -32,10 +32,23 @@ public class Unit {
     // 最小颗粒度是0.5 一次最少扣除0.5
     private float hp;
 
-    private UnitSkill skill;
+    // 地面 - 单位
+    private BigDecimal walk;
 
-    // mark 属性是可以用静态文本反射上去的
-    private UnitAttackProperty property;
+    // 地面 - 重甲 - 单位
+    private BigDecimal walkHeavy;
+
+    // 地面 - 轻甲 - 单位
+    private BigDecimal walkLight;
+
+    // 空中 - 单位
+    private BigDecimal fly;
+
+    // 空中 - 重甲 - 单位
+    private BigDecimal flyHeavy;
+
+    // 空中 - 轻甲 - 单位
+    private BigDecimal flyLight;
 
     private int armor;
 

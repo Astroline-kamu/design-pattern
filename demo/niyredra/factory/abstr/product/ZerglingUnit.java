@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2022 Astroline All rights reserved.
  *
- * @date: 9/19/22, 10:02 PM
+ * @date: 9/20/22, 8:57 AM
  * @author: Astroline <Astroline_kamu@outlook.com>
  *
  * https://niyredra.com
@@ -10,18 +10,10 @@
  * 嗷～
  */
 
-package niyredra.factory.normal.factory.base;
-
-import niyredra.factory.normal.product.base.Unit;
+package niyredra.factory.abstr.product;
 
 /**
- *
- * 泰伦制造工厂
- *
  * @author Niyredra Astroline_kamu@outlook.com
  */
-public abstract class TerranFactory {
-
-    abstract Unit buildUnit();
-
+public class ZerglingUnit {
 }
