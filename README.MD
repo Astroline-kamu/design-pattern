@@ -2,9 +2,9 @@
 
 - 创建型模式 (Niyredra)
     1. 工厂模式
-        1. [简单工厂模式](./demo/niyredra/factory/simple/SimpleFactoryApplication.java)
-        2. 工厂方法模式
-        3. 抽象工厂模式
+        1. [简单工厂模式](./demo/niyredra/factory/simple)
+        2. [工厂方法模式](./demo/niyredra/factory/normal)
+        3. [抽象工厂模式](./demo/niyredra/factory/abstr)
     2. 单例模式
     3. 原型模式
     4. 建造者模式
@@ -62,6 +62,13 @@ protobuf是个好东西，在最终的example中我会用到它的
 IDEA - `command + ;` ->> Libraries ->> form maven (理论上我的jar包是也上传到项目中的，所以代码下下来之后直接引用本地文件就好 文件地址在根目录的lib下 或者你也是idea，就不用改啦～)
 
 Lombok ---- 我真的不想再写getter and setter了啊～～
+
+
+# 写在最后
+
+写东西容易啊～
+但是想规约，就没这么容易了。
+我不是那种可以想哪里就写哪里的龙，我们都不是。
 
 内容参考：https://blog.csdn.net/LoveLion/article/details/17517213
 
