@@ -10,5 +10,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="projectlombok.lombok" level="project" />
+    <orderEntry type="library" name="javax.mail.api" level="project" />
   </component>
 </module>

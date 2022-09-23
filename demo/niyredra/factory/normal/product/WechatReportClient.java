@@ -12,6 +12,7 @@
 
 package niyredra.factory.normal.product;
 
+import niyredra.factory.normal.common.handler.WechatReportClientHandler;
 import niyredra.factory.normal.product.base.ReportClient;
 
 /**
@@ -22,41 +23,46 @@ import niyredra.factory.normal.product.base.ReportClient;
  */
 public class WechatReportClient extends ReportClient {
 
-    private WechatReportCallback callback;
-
-    public abstract class WechatReportCallback {
-
-        public abstract String getAccessToken(boolean force);
-
-        public abstract String getAccessToken();
-    }
-
-    public void setCallback(WechatReportCallback callback){
-        this.callback = callback;
-    }
-
-    @Override
-    public void sent(String msg) {
-
+    /**
+     * 消息发送
+     *
+     * @param msg 发送信息
+     * @param retry 重新尝试的次数
+     */
+    public void sent(String msg, int retry) {
 
         try {
-            if (callback.getAccessToken() == null)
-                throw new Exception("AccessToken已过期");
-
-            System.out.println("发送至微信客户端：" + msg);
-
+            String token = WechatReportClientHandler.getAccessToken();
+            if (token == null)
+                throw new Exception("AccessToken不存在");
+            System.out.println("使用" + token + " 发送至微信客户端：" + msg);
         }catch (Exception e) {
-            callback.getAccessToken(true);
+            if (retry > 0) {
+                WechatReportClientHandler.getAccessToken(true);
+                System.out.println("AccessToken已过期，重新获取");
+                sent(msg, retry - 1);
+            }else {
+                System.out.println("AccessToken无法获取！");
+            }
         }
     }
 
+    /**
+     * 消息发送 默认重新尝试请求三次
+     *
+     * @param msg
+     */
+    @Override
+    public void sent(String msg) {
+        // 默认重新尝试时间
+        sent(msg, 3);
+    }
+
+
     @Override
     public void close() {
-
+        System.out.println("关闭微信请求链接");
     }
 
-    private void connect(String token) throws Exception {
-        System.out.println("已链接");
-    }
 
 }

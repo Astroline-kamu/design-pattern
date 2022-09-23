@@ -12,19 +12,16 @@
 
 package niyredra.factory.normal.factory.model;
 
-import lombok.Data;
-import niyredra.factory.normal.factory.model.base.ClientConfig;
-
 /**
  *
  * 这个部分在最终应该是从xml中读取的 就像spring一样，用@ConfigurationProperties读取
  * @author Niyredra Astroline_kamu@outlook.com
  */
-@Data
-public class WechatConfig extends ClientConfig {
-    private String appid;
-    private String secret;
+public record WechatReportProperties(String appid, String secret, long exprieTime) {
 
-    // 到期时间 精确到秒
-    private long exprieTime;
+    // 可能我觉得这么写有点不太妥当awa
+//    private static final String appid = "Appid";
+//    private static final String secret = "secret es cince rat es terces.";
+//    // 到期时间 精确到秒
+//    private static final long exprieTime = 7200L;
 }

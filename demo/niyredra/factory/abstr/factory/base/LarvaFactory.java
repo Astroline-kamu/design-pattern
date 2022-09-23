@@ -12,6 +12,8 @@
 
 package niyredra.factory.abstr.factory.base;
 
+import niyredra.factory.abstr.product.base.ZergUnit;
+
 /**
  *
  * 虫卵工厂 我们可以用虫巢来称呼它

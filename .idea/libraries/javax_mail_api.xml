@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="javax.mail.api" type="repository">
+    <properties maven-id="javax.mail:javax.mail-api:1.6.0" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/javax.mail-api-1.6.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib/javax.mail-api-1.6.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

@@ -12,61 +12,50 @@
 
 package niyredra.factory.normal.factory;
 
+import niyredra.factory.normal.common.handler.WechatReportClientHandler;
 import niyredra.factory.normal.factory.base.ReportFactory;
-import niyredra.factory.normal.factory.model.WechatConfig;
+import niyredra.factory.normal.factory.model.WechatReportProperties;
 import niyredra.factory.normal.product.WechatReportClient;
 import niyredra.factory.normal.product.base.ReportClient;
 
-import java.time.LocalTime;
-import java.util.Date;
-
 /**
+ * 流程1 将Handler静态化，没有Factory什么事了
+ *
  * @author Niyredra Astroline_kamu@outlook.com
+ * @see SMSReportClient
  */
 public class WechatReportFactory extends ReportFactory {
 
-    private WechatConfig config;
+    /**
+     * 我只想说 重载了这么多方法，确实不如用xml配置反射属性上去的简洁...
+     *
+     * @return
+     */
+    public ReportClient getClient(WechatReportProperties wechatReportProperties) {
+        // 反射拿到链接数据装入Config中 - 没写！
+        WechatReportClientHandler.setProperties(wechatReportProperties);
 
-    WechatReportFactory() {
-        // 注入数据内容
-        config.setAppid("Appid");
-        config.setSecret("secret es cince rat es terces.");  // 我不知道为什么，拼写检测居然不生效了emmmmmm
-        config.setExprieTime(7200L);
+        // 拿到AccessToken - 不需要！
+
+        // 返回客户端！
+        return new WechatReportClient();
+    }
+
+    public ReportClient getClient(String appid, String secret, long exprieTime) {
+        return getClient(
+                new WechatReportProperties(appid, secret, exprieTime)
+        );
+    }
+
+    public ReportClient getClient(String appid, String secret) {
+        return getClient(
+                new WechatReportProperties(appid, secret, 7200L)
+        );
     }
 
     @Override
     public ReportClient getClient() {
-        // 反射拿到链接数据
-
-        // 拿到AccessToken
-        WechatReportClient wechatReportClient = new WechatReportClient();
-
-        wechatReportClient.setCallback(new WechatReportClient().new WechatReportCallback() {
-            private Long expireTime = new Date().getTime();
-            private String token = null;
-
-            @Override
-            public String getAccessToken(boolean force) {
-
-                Long refreshInterval = config.getExprieTime() - 600L;
-
-                if (expireTime - new Date().getTime() > 0 || force) {
-                    this.expireTime = new Date().getTime() + refreshInterval;
-                    String token = this.token = "Astroline" + String.valueOf(LocalTime.now().getNano());
-                    this.token = token;
-                    System.out.println("更新AccessToken：" + token);
-                }
-                return this.token;
-            }
-
-            @Override
-            public String getAccessToken() {
-                return getAccessToken(false);
-            }
-        });
-
-        //
-        return wechatReportClient;
+        return getClient(new WechatReportProperties("Appid", "secret es cince rat es terces", 7200L));
     }
 
 

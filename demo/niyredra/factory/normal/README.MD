@@ -11,8 +11,28 @@
 
 你问我为什么没有把这些代码开源出来——<sub><sup><sub><sub>只是因为功能未完善，所以暂时没有传到maven上就是了...<sup><sub>(超小声)</sub></sup></sub></sub></sup></sub>
 
+## 结构
 
-## 后续说明
+- `Factory`负责配置Handler（很显然handler自己也可以完成，所以我让它变得稍微灵活了一点点）
+- `Client`负责正式执行，进行Report的消息发送
+- `Handler`负责装载Factory传来的配置信息，然后进行
+- `Properties`用来传输配置信息的Pojo类
+
+## 未完成
+
+- SMS的服务渠道有很多，比如阿里云、聚合数据等
+- 信息收发可以是有模版包的，微信和企业微信都有提供一套可信的消息推送样式
+- Email的两种配置方式，imap和pop3 这里只写了imap的方法
+- Email的收发数据模版
+
+## 流程
+
+流程1 将Handler静态化，没有Factory什么事了
+流程2 Handler用反射获取基本登陆信息，也没有factory什么事了
+流程3 Factory中反射获取Properties，直接生成带Properties的Client（应当如此）
+
+
+## At last
 
 总之！这一个案例说配置，下一个案例写一个实现。
 
@@ -36,5 +56,4 @@
 
 
 
-
-————侦测到在途的聚变打击，赶紧拔草测风向～
+————核弹来袭，赶紧拔草测风向～

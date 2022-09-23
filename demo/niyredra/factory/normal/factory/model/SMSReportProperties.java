@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2022 Astroline All rights reserved.
  *
- * @date: 9/22/22, 6:24 PM
+ * @date: 9/23/22, 11:12 AM
  * @author: Astroline <Astroline_kamu@outlook.com>
  *
  * https://niyredra.com
@@ -10,16 +10,11 @@
  * 嗷～
  */
 
-package niyredra.factory.normal.common.handler;
+package niyredra.factory.normal.factory.model;
 
 /**
  * @author Niyredra Astroline_kamu@outlook.com
  */
-public class WechatClientHandler {
-
-    WechatClientHandler()
-    {
-
-    }
-
+public record SMSReportProperties(String mobile, int tplId, String tplValue, String key) {
+    
 }

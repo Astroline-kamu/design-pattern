@@ -12,7 +12,7 @@
 
 package niyredra.factory.normal.factory.base;
 
-import niyredra.factory.normal.factory.model.base.ClientConfig;
+import niyredra.factory.normal.factory.model.WechatReportProperties;
 import niyredra.factory.normal.product.base.ReportClient;
 
 /**
@@ -20,8 +20,6 @@ import niyredra.factory.normal.product.base.ReportClient;
  * @author Niyredra Astroline_kamu@outlook.com
  */
 public abstract class ReportFactory {
-
-    protected ClientConfig config;
 
     public abstract ReportClient getClient();
 
