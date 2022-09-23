@@ -14,12 +14,15 @@ package niyredra.factory.normal.test;
 
 import common.test.RootTest;
 import common.test.annotation.Test;
+import common.utils.XMLUtils;
 import niyredra.factory.normal.factory.EmailReportFactory;
 import niyredra.factory.normal.factory.SMSReportFactory;
 import niyredra.factory.normal.factory.WechatReportFactory;
 import niyredra.factory.normal.product.EmailReportClient;
 import niyredra.factory.normal.product.WechatReportClient;
 import niyredra.factory.normal.product.base.ReportClient;
+
+import java.io.File;
 
 /**
  * @author Niyredra Astroline_kamu@outlook.com
@@ -37,11 +40,15 @@ public class NormalFactoryTest extends RootTest {
 
     @Test
     public void smsReportTest(){
-        SMSReportFactory factory = new SMSReportFactory();
-        ReportClient client = factory.getClient();
+        // 大致流程就是 xml拿到类名，然后class直接获取到对象
+//        XMLUtils.getRootContext(
+//                System.getProperty("user.dir") + "/demo/niyredra/factory/normal/resources/FeactoryBean.xml",
+//                "className");
 
-        client.sent("1108 is you safety code, please remember and never forgot.");
-        client.close();
+//        Class c=Class.forName("String");
+//        Object obj=c.newInstance();
+        SMSReportFactory factory = new SMSReportFactory();
+        factory.sendMeg("这是一条由隐藏工厂方法发送的短信消息，内容如下\n1108 is you safety code, please remember and never forgot.");
     }
 
     @Test

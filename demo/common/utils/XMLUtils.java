@@ -38,6 +38,8 @@ public class XMLUtils {
 
             // todo Handler做处理返回结果
             saxParser.parse(inputStream, new XMLHandler());
+
+//            System.out.println(saxParser.getProperty());
         } catch (
                 SAXException
                 | ParserConfigurationException

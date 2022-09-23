@@ -18,6 +18,9 @@ import niyredra.factory.normal.product.SMSReportClient;
 import niyredra.factory.normal.product.base.ReportClient;
 
 /**
+ *
+ * 隐藏工厂方法
+ *
  * @author Niyredra Astroline_kamu@outlook.com
  */
 public class SMSReportFactory extends ReportFactory {
@@ -33,6 +36,10 @@ public class SMSReportFactory extends ReportFactory {
 
     public ReportClient getClient(SMSReportProperties properties) {
         return new SMSReportClient(properties);
+    }
+
+    public void sendMeg(String msg){
+        this.getClient().sent(msg);
     }
 
 }
