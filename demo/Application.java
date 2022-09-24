@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2022 Astroline All rights reserved.
  *
- * @date: 9/18/22, 4:23 PM
+ * @date: 9/24/22, 1:00 PM
  * @author: Astroline <Astroline_kamu@outlook.com>
  *
  * https://niyredra.com
@@ -10,15 +10,18 @@
  * 嗷～
  */
 
-package common.test;
+import common.test.RootTest;
+import common.test.handler.DefaultHandler;
 
 /**
- * 原计划把这个main函数反射到打了@Test的注解里去...显然不是这么用的
+ *
+ * todo 有空实现下通过父类查子类的方法 实在不行就扫描包
  *
  * @author Niyredra Astroline_kamu@outlook.com
  */
-public class TestApplication {
+public class Application {
     public static void main(String[] args) {
-
+        new DefaultHandler(RootTest.class)
+                .runTests();
     }
 }

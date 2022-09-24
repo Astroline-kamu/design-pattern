@@ -12,6 +12,8 @@
 
 package common.test;
 
+import common.test.annotation.Test;
+
 /**
  * @author Niyredra Astroline_kamu@outlook.com
  */

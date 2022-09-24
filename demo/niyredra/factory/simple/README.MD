@@ -5,3 +5,7 @@
  曾经的这群鸽子，是生活在水下的。
 
 
+
+# 结构图
+
+![img.png](resources/image/img.png)
