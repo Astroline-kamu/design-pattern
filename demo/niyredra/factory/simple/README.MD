@@ -8,4 +8,4 @@
 
 # 结构图
 
-![img.png](resources/image/img.png)
+![简单工厂UML图](../../../../resources/image/SimpleFactoryUML.png)
