@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2022 Astroline All rights reserved.
  *
- * @date: 9/20/22, 7:47 AM
+ * @date: 9/25/22, 12:15 PM
  * @author: Astroline <Astroline_kamu@outlook.com>
  *
  * https://niyredra.com
@@ -10,7 +10,7 @@
  * 嗷～
  */
 
-package niyredra.factory.abstr.product.base;
+package niyredra.factory.abstr.sc.unit.model;
 
 import lombok.Data;
 
@@ -18,19 +18,12 @@ import java.math.BigDecimal;
 
 /**
  *
- * 单位会被继承，是Terran、Protoss又或者Zerg。
+ * 单位属性
  *
  * @author Niyredra Astroline_kamu@outlook.com
  */
 @Data
-public class ZergUnit {
-
-    private int tag;
-
-    private String name;
-
-    // 最小颗粒度是0.5 一次最少扣除0.5
-    private float hp;
+public class UnitAttackProperty {
 
     // 地面 - 单位
     private BigDecimal walk;
@@ -50,6 +43,14 @@ public class ZergUnit {
     // 空中 - 轻甲 - 单位
     private BigDecimal flyLight;
 
-    private int armor;
+    // 修改到一个专门的Handler中
+    public BigDecimal getAttack(){
+
+        // 假定条件：轻甲13、对空12。
+        // 优先级在：轻甲 ->> 对空。
+        // 对面空军是轻甲 返回13 对面空军是重甲或者英雄等其它标签 返回12
+
+        return walk;
+    }
 
 }

@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2022 Astroline All rights reserved.
  *
- * @date: 9/20/22, 12:15 AM
+ * @date: 9/25/22, 12:15 PM
  * @author: Astroline <Astroline_kamu@outlook.com>
  *
  * https://niyredra.com
@@ -10,11 +10,9 @@
  * 嗷～
  */
 
-package niyredra.factory.abstr.product.model;
+package niyredra.factory.abstr.sc.unit.model;
 
 import lombok.Data;
-
-import java.awt.event.KeyEvent;
 
 /**
  * @author Niyredra Astroline_kamu@outlook.com

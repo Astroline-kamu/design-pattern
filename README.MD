@@ -72,3 +72,8 @@ Lombok ---- 我真的不想再写getter and setter了啊～～
 
 内容参考：https://blog.csdn.net/LoveLion/article/details/17517213
 
+
+
+
+我对建造者想法是，
+

@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2022 Astroline All rights reserved.
  *
- * @date: 9/19/22, 10:02 PM
+ * @date: 9/25/22, 12:25 PM
  * @author: Astroline <Astroline_kamu@outlook.com>
  *
  * https://niyredra.com
@@ -10,9 +10,9 @@
  * 嗷～
  */
 
-package niyredra.factory.abstr.factory.base;
+package niyredra.factory.abstr.sc.factory.race;
 
-import niyredra.factory.abstr.product.base.ZergUnit;
+import niyredra.factory.abstr.sc.unit.base.ZergUnit;
 
 /**
  *
@@ -21,8 +21,7 @@ import niyredra.factory.abstr.product.base.ZergUnit;
  *
  * @author Niyredra Astroline_kamu@outlook.com
  */
-public abstract class LarvaFactory {
-
+public abstract class ZergFactory {
     abstract ZergUnit mutation();
 
     abstract void build(ZergUnit unit);
