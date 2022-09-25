@@ -42,7 +42,7 @@ public class SimpleFactoryTest extends RootTest {
     }
 
     private void generalBehavior(Pigeon pigeon) {
-        pigeon.beingCatched();
+        pigeon.beingCaught();
 
         pigeon.eatMethod();
         pigeon.eat();

@@ -75,5 +75,6 @@ Lombok ---- 我真的不想再写getter and setter了啊～～
 
 
 
-我对建造者想法是，
+我对建造者想法是，XML是一个对象，然后内建方法get，get返回get后的对象本体
+这样就可以get嵌套了。
 

@@ -26,11 +26,11 @@ public enum PigeonType {
     NORMAL("Normal Pigeon", NormalPigeon.class),
     VARIATION("Variation Pigeon", VariationPigeon.class);
 
-    private String type;
+    private final String type;
 
-    private Class<Pigeon> clazz;
+    private final Class<? extends Pigeon> clazz;
 
-    PigeonType(String type, Class clazz) {
+    PigeonType(String type, Class<? extends Pigeon> clazz) {
         this.type = type;
         this.clazz = clazz;
     }
@@ -39,7 +39,7 @@ public enum PigeonType {
         return type;
     }
 
-    public Class<Pigeon> getClazz() {
+    public Class<? extends Pigeon> getClazz() {
         return clazz;
     }
 }

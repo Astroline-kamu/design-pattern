@@ -23,7 +23,7 @@ public abstract class Pigeon{
         this.name = name;
     }
 
-    public void beingCatched() {
+    public void beingCaught() {
         System.out.println("捕获" + name + "！");
     }
 
