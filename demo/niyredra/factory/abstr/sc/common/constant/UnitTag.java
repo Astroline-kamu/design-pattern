@@ -18,7 +18,7 @@ import lombok.Getter;
  * 属性标签 - todo 有必要继承么？理论上，我需要扩展出新的标签出来
  * 我重新理解了下这个部分，它更像是一种单位的描述，比如说打上了Untransportable标签，就是不能装载单位；打上了Structure，它就是建筑单位
  * 这东西并不是一个标签这么简单我觉得，可能还和实现设计有关系，比如，Structure标签的单位会多出来Size（宽高）属性（星际里好像没有长方形的建筑吧？）
- *
+ * <p>
  * 用注解的形式将标签注入到Pojo里，每个Pojo必须有至少一个标签？
  *
  * @author Niyredra Astroline_kamu@outlook.com
@@ -37,9 +37,9 @@ public enum UnitTag {
     UNTRANSPORTABLE(1 << 10)  // 不能运输
     ;
 
-    private final int tag;
+    private final long tag;
 
-    UnitTag(int tag) {
+    UnitTag(long tag) {
         this.tag = tag;
     }
 }

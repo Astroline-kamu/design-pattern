@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2022 Astroline All rights reserved.
  *
- * @date: 9/25/22, 12:24 PM
+ * @date: 10/15/22, 8:44 PM
  * @author: Astroline <Astroline_kamu@outlook.com>
  *
  * https://niyredra.com
@@ -10,11 +10,12 @@
  * 嗷～
  */
 
-package niyredra.factory.abstr.sc.factory.sc;
+package niyredra.factory.abstr.sc.unit.model;
 
 /**
+ *
+ * 可以理解为单位拥有的buff或者debuff
  * @author Niyredra Astroline_kamu@outlook.com
  */
-public abstract class SCFactory {
-//    ZergFactory
+public class Status {
 }

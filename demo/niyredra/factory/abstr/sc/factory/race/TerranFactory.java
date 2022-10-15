@@ -13,6 +13,7 @@
 package niyredra.factory.abstr.sc.factory.race;
 
 import niyredra.factory.abstr.sc.unit.base.Unit;
+import niyredra.factory.abstr.sc.unit.model.UnitSkill;
 
 /**
  *
@@ -22,6 +23,13 @@ import niyredra.factory.abstr.sc.unit.base.Unit;
  */
 public abstract class TerranFactory {
 
+    // 建造单位 structure标签的单位需要走这个方法
     abstract Unit buildUnit();
+
+    // 训练单位 用于建造非structure标签的单位
+    abstract Unit trainUnit();
+
+    // 科技
+    abstract UnitSkill research();
 
 }
